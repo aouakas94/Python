@@ -30,16 +30,28 @@ print ('votre nom est ' +nom , 'et votre age est ' + str(age))
 nom = input ('str')
 -----------------
 """
+"""
 one = input('saissaissez un nombre ')
 #operation= input('saisir operation')
 two = input('saissaissez un autre ')
 resultat = int(one) + int(two)
 try:
-    resultat = int(one) + int(two)
+    resultat = int(one) * int(two)
 except ValueError:
     print("erreur")
 else:
     print (resultat)
+"""
+#boucle while
+n=4
+#print(n)
+n=n+1
+#print(n)
 
+while n < 10 :
+    
+    print(str(n))
+   
 
+print ('fin de la boucle')
 
