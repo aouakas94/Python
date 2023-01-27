@@ -42,4 +42,5 @@ else:
     print (resultat)
 
 
+wget https://github.com/liquibase/liquibase/releases/download/liquibase-parent-3.11.0/liquibase-3.11.0-bin.tar.gz
 
