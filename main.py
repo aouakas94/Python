@@ -81,12 +81,13 @@ print("bonjour " + nom)
 def demande_age():
     age_int = 0
     while age_int == 0:
-        age_str = input("quel est votre age? ")
+        age_str = input("quel est votre age? :")
         try:
             age_int = int(age_str)
         except:
-            print("error entrez un nombre ")
+            print("error entrez un nombre reel ")
     return age_int
+
 
 nom = ""
 while nom == "":
@@ -94,7 +95,9 @@ while nom == "":
 age = demande_age()
 
 print ("bonjour " + nom )
-print ("vous avez " + str(age) + "ans")
+print ("vous avez " + str(age) + " ans")
+print ("lannée prochaine vous aurez " + str(age+1) + " ans")
+
 
 
 
