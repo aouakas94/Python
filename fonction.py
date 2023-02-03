@@ -5,10 +5,10 @@ def demande_nom():
     print ("bonjour " +nom)
     return nom
 
-def demande_age(personne):
+def demande_age(param1):
     age = 0
     while age== 0:
-        age = input(personne +' quel est votre age?: ')
+        age = input(param1 +' quel est votre age?: ')
     print ("vous avez "+ age)
     return age
 
