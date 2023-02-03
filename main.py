@@ -85,7 +85,7 @@ def demande_age():
         try:
             age_int = int(age_str)
         except:
-            print("error entrez un nombre")
+            print("error entrez un nombre ")
     return age_int
 
 nom = ""
