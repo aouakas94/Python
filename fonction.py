@@ -1,3 +1,4 @@
+
 def demande_nom():
     nom = ""
     while nom == "":
@@ -6,11 +7,15 @@ def demande_nom():
     return nom
 
 def demande_age(param1):
-    age = 0
-    while age== 0:
-        age = input(param1 +' quel est votre age?: ')
-    print ("vous avez "+ age)
-    return age
+    age_int = 0
+    while age_int== 0:
+        age_str = input(param1 +' quel est votre age?: ')
+        try:
+            age_int = int(age_str) 
+        except ValueError:
+            print ("error ")
+    #print ("vous avez "+ age)
+    return age_int
 
 nom1=demande_nom()
 nom2=demande_nom()
@@ -26,6 +31,17 @@ print(age2)
 
 #nom1=demande_nom()
 #nom2=demande_nom()
+
+
+#fonction a 2 params
+
+def demande_info(nom,age):
+    print("bonjour " +nom + " vous avez " + str(age) + " awkasans")
+
+demande_info(nom1,age1)
+demande_info(nom2,age2)
+
+
 
 
 
