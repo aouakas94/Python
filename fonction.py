@@ -16,12 +16,6 @@ def demande_age(param1):
             print ("error ")
     #print ("vous avez "+ age)
 
-    condition= age_int >= 18
-    if condition:
-        print("vous etes majeur ")
-    else:
-       print("mineur lol")
-
     return age_int
 '''
 nom1=demande_nom()
@@ -41,8 +35,8 @@ age2=demande_age(nom2)
 
 
 #fonction a 2 params
-
-def demande_info(nom,age):
+'''
+def demande_info(nom,age,taille=0):
     print("bonjour " +nom + " vous avez " + str(age) + " ans")
     if age >= 18:
             print("vous etes majeur ")
@@ -50,17 +44,24 @@ def demande_info(nom,age):
         print("adolesent lol")
     elif age<3 and age <18:
         print("mineur et bebe haha")
+    else:
+        print("salam")
+    
+    if not taille == 0:
+        print("votre taille est " + str(taille) + " m")
    
 
-demande_info(nom1,age1)
-demande_info(nom2,age2)
-'''
+#demande_info(nom1,age1)
+#demande_info(nom2,age2)
+
 
 #boucle for
-for i in range(0,5):
+Nb_personne=1
+for i in range(0,Nb_personne):
     nom="personne" + str(i+1)
-    demande_age(nom)
-    
+    age=demande_age(nom)
+    demande_info(nom,age, 1.82)
+#
 
 
 
