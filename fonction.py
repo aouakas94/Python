@@ -15,6 +15,11 @@ def demande_age(param1):
         except ValueError:
             print ("error ")
     #print ("vous avez "+ age)
+    if age_int >= 18:
+        print("vous etes majeur ")
+    else:
+        print("mineur lol")
+
     return age_int
 
 nom1=demande_nom()
@@ -36,10 +41,17 @@ print(age2)
 #fonction a 2 params
 
 def demande_info(nom,age):
-    print("bonjour " +nom + " vous avez " + str(age) + " awkasans")
+    print("bonjour " +nom + " vous avez " + str(age) + " ans")
+    if age >= 18:
+            print("vous etes majeur ")
+    else:
+        print("mineur lol")
 
 demande_info(nom1,age1)
 demande_info(nom2,age2)
+
+
+
 
 
 
