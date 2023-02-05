@@ -6,15 +6,12 @@ app = Flask(__name__, template_folder='templates')
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/index')
 def index():
     #return "azul a thama3zouzthiw"
-    return render_template('fonction.py')
+    return render_template('index.html',title="bienvenue ")
 
-@app.route('/user/')
-def user(name):
-    return render_template('user.html', name = name)
 
 if __name__ == '__main__':
-    app.run(debug = True)
-    #manager.run()
+    app.run(debug=True)
+    
