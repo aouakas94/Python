@@ -15,24 +15,26 @@ def demande_age(param1):
         except ValueError:
             print ("error ")
     #print ("vous avez "+ age)
-    if age_int >= 18:
+
+    condition= age_int >= 18
+    if condition:
         print("vous etes majeur ")
     else:
-        print("mineur lol")
+       print("mineur lol")
 
     return age_int
-
+'''
 nom1=demande_nom()
 nom2=demande_nom()
 
 age1=demande_age(nom1)
 age2=demande_age(nom2)
 
-print(nom1)
-print(nom2)
+#print(nom1)
+#print(nom2)
 
-print(age1)
-print(age2)
+#print(age1)
+#print(age2)
 
 #nom1=demande_nom()
 #nom2=demande_nom()
@@ -44,12 +46,21 @@ def demande_info(nom,age):
     print("bonjour " +nom + " vous avez " + str(age) + " ans")
     if age >= 18:
             print("vous etes majeur ")
-    else:
-        print("mineur lol")
+    elif age>=12 and age <18:
+        print("adolesent lol")
+    elif age<3 and age <18:
+        print("mineur et bebe haha")
+   
 
 demande_info(nom1,age1)
 demande_info(nom2,age2)
+'''
 
+#boucle for
+for i in range(0,5):
+    nom="personne" + str(i+1)
+    demande_age(nom)
+    
 
 
 
