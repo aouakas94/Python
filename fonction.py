@@ -3,7 +3,8 @@ def demande_nom():
     nom = ""
     while nom == "":
           nom = input('inserez un nom?:')
-    print ("bonjour " +nom)
+    print (f"bonjour  {nom}")
+    print ("bonjour %s" %nom)
     return nom
 
 def demande_age(param1):
@@ -17,6 +18,19 @@ def demande_age(param1):
     #print ("vous avez "+ age)
 
     return age_int
+
+def demande_taille(nom):
+    taille_int = 0
+    while taille_int== 0:
+        taille_str = input(nom +' quel est votre taille?: ')
+        try:
+            taille_int = int(taille_str) 
+        except ValueError:
+            print ("error ")
+    #print ("vous avez "+ age)s
+
+    return taille_int
+
 '''
 nom1=demande_nom()
 nom2=demande_nom()
@@ -36,7 +50,7 @@ age2=demande_age(nom2)
 
 #fonction a 2 params
 '''
-def demande_info(nom,age,taille=0):
+def demande_info(nom,age,taille):
     print("bonjour " +nom + " vous avez " + str(age) + " ans")
     if age >= 18:
             print("vous etes majeur ")
@@ -58,9 +72,10 @@ def demande_info(nom,age,taille=0):
 #boucle for
 Nb_personne=1
 for i in range(0,Nb_personne):
-    nom="personne" + str(i+1)
+    nom=demande_nom()
     age=demande_age(nom)
-    demande_info(nom,age, 1.82)
+    taille=demande_taille(nom)
+    demande_info(nom,age,taille)
 #
 
 
