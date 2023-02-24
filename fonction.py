@@ -12,7 +12,7 @@ def demande_age(param1):
     while age_int== 0:
         age_str = input(param1 +' quel est votre age?: ')
         try:
-            age_int = int(age_str) 
+            age_int = age_str 
         except ValueError:
             print ("error ")
     #print ("vous avez "+ age)
