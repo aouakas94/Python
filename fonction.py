@@ -78,6 +78,17 @@ for i in range(0,Nb_personne):
     demande_info(nom,age,taille)
 #
 
+print("""
+      test 
+      
+      decrire sur 
+      
+      plusieurs 
+      
+      lignes 
+      
+ 
+      """)
 
 
 
